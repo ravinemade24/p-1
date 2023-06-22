@@ -1,0 +1,25 @@
+@media only screen and (max-width: 767px) {
+
+    .phBox{
+        flex-direction: column;
+        text-align: center;
+    }
+    .phBox img{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .hero-section{
+        height: 100%;
+    }
+    .hero_content h1 {
+       
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .hero_content p {
+       
+        font-size: 15px;
+        line-height: 30px;
+    }
+    
+}
