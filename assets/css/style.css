@@ -46,7 +46,7 @@ header {
   background-color: #f0fff0;
   height: calc(100vh - 90px);
   padding: 90px 0 0 0;
-  height: 650px;
+  height: auto;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -95,7 +95,7 @@ a.btn_custom {
 .feature_content {
   margin: 0 auto;
   text-align: center;
-  background: #F8FFFB;
+  background: #f0fff0;
   border-radius: 10px;
   padding: 45px;
   cursor: pointer;
@@ -161,6 +161,8 @@ a.btn_custom {
 .schedule img {
     margin-right: 15px;
     vertical-align: middle;
+    width: 20px;
+    height: 20px;
 }
 
 .online-coures .cards .btn_custom{
