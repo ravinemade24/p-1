@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title"content=""/>
-    <title>E-school</title>
+    <meta name="title" content="" />
+    <title>Clinic Landing page</title>
 
     <!-- Favicon -->
 
     <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
     <!-- fonts -->
 
@@ -34,392 +38,588 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   </head>
   <body>
-    <!-- header -->
+    <!-- navbar -->
+    <header class="header_wrapper">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="" class="img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav menu_navbar">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
 
-    <header>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar -->
+
+    <!-- Banner Section -->
+
+    <section id="home" class="home">
+      <div class="banner_wrapper wrapper">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 order-md-1 order-2">
+              <h3>Better Life</h3>
+              <h1>Better</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti quasi accusantium doloremque doloribus. Sapiente, nulla
+                similique. Deleniti accusamus voluptas qui?
+              </p>
+              <a href="#" class="main_btn mt-4 fill_btn">Explore</a>
+              <a href="#" class="main_btn mt-4 ms-3">More</a>
+            </div>
+
+            <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
+              <div class="top_right">
+                <div class="animate_img">
+                  <img
+                    src="assets/images/top-banner-img/woman-brush.png"
+                    alt=""
+                    class="img_1"
+                  />
+                  <img
+                    src="assets/images/top-banner-img/doctor.png"
+                    alt=""
+                    class="img_2"
+                  />
+                </div>
+                <img
+                  src="assets/images/top-banner-img/top-right-img-1.png"
+                  alt=""
+                  class="img-fluid ms-xl-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper pb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card text-center">
+                <div class="icon_box">
+                  <img
+                    src="assets/images/top-banner-img/Appointment-icon.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <h4>Easy Explore</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card text-center">
+                <div class="icon_box">
+                  <img
+                    src="assets/images/top-banner-img/Emergency-icon.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <h4>Easy Explore</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card text-center">
+                <div class="icon_box">
+                  <img
+                    src="assets/images/top-banner-img/7-Service-icon.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card_content">
+                  <h4>Easy Explore</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner Section -->
+
+    <!-- About section start-->
+
+    <section id="about" class="about_wrapper wrapper">
       <div class="container">
         <div class="row">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container-fluid p-0">
-              <a class="navbar-brand" href="#">
-                <img
-                  src="assets/images/logo.svg"
-                  alt="logo"
-                  class="img-fluid"
-                />
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#feature">Books</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#course">Course</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Others</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#footer">Blog</a>
-                  </li>
+          <div class="col-md-6 mb-md-0 mb-5">
+            <div class="position-relative">
+              <img src="assets/images/about/about-banner1.png" alt="" class="img-fluid">
+              <img src="assets/images/about/about-img2.png" alt="" class="about_animate">
+
+            </div>
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <h2>Welcome to a Family</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores laboriosam ut mollitia quae consectetur totam?</p>
+            <div class="mt-5 card">
+              <div class="about_clinic">
+                <h4>500+</h4>
+                <p>Happy Patients</p>
+
+              </div>
+              <div class="about_clinic">
+                <h4>500+</h4>
+                <p>Happy Patients</p>
+                
+              </div>
+              <div class="about_clinic">
+                <h4>500+</h4>
+                <p>Happy Patients</p>
+                
+              </div>
+              <div class="about_clinic">
+                <h4>500+</h4>
+                <p>Happy Patients</p>
+                
+              </div>
+              
+              <span class="line_1"></span>
+              <span class="line_2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end-->
+
+    <!-- sevices section start -->
+    <section id="services" class="services_wrapper wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-5">
+            <h3>Our Services</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <div class="icon_box">
+                <img src="assets/images/services/1.svg" alt="">
+              </div>
+              <div class="services_content">
+                <div>
+                  <h4>Complete</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, quam atque!</p>
+                  </div>
+                  <div>
+                    <a href="#" class="main_btn mt-4">Know More</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <div class="icon_box">
+                <img src="assets/images/services/2.svg" alt="">
+              </div>
+              <div class="services_content">
+                <div>
+                <h4>Complete</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, quam atque!</p>
+                </div>
+                <div>
+                  <a href="#" class="main_btn mt-4">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <div class="icon_box">
+                <img src="assets/images/services/3.svg" alt="">
+              </div>
+              <div class="services_content">
+                <div>
+                  <h4>Complete</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, quam atque!</p>
+                  </div>
+                  <div>
+                    <a href="#" class="main_btn mt-4">Know More</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <div class="icon_box">
+                <img src="assets/images/services/4.svg" alt="">
+              </div>
+              <div class="services_content">
+                <div>
+                  <h4>Complete</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, quam atque!</p>
+                  </div>
+                  <div>
+                    <a href="#" class="main_btn mt-4">Know More</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <div class="icon_box">
+                <img src="assets/images/services/5.svg" alt="">
+              </div>
+              <div class="services_content">
+                <div>
+                  <h4>Complete</h4>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid saepe nihil soluta distinctio vero? Magni aliquid ut aliquam, officiis dicta ipsum!!</p>
+                  </div>
+                  <div>
+                    <a href="#" class="main_btn mt-4">Know More</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <div class="icon_box">
+                <img src="assets/images/services/6.svg" alt="">
+              </div>
+              <div class="services_content">
+                <div>
+                  <h4>Complete</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, quam atque!</p>
+                  </div>
+                  <div>
+                    <a href="#" class="main_btn mt-4">Know More</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sevices section end -->
+
+    <!-- Team section start -->
+    <section id="team" class="teams_wrapper wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-5">
+            <h3 class="text-dark">Our Dentists</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card rounded-3">
+              <div class="team_img">
+                <img src="assets/images/team/team1.png" alt="" class="img-fluid">
+              </div>
+              <div class="team_info pt-4 text-center">
+                <h5>Darry Millin</h5>
+                <p>Oral Surgeon</p>
+                <ul class="social_networks">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
                 </ul>
               </div>
             </div>
-          </nav>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card rounded-3">
+              <div class="team_img">
+                <img src="assets/images/team/team2.png" alt="" class="img-fluid">
+              </div>
+              <div class="team_info pt-4 text-center">
+                <h5>Darry Millin</h5>
+                <p>Oral Surgeon</p>
+                <ul class="social_networks">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card rounded-3">
+              <div class="team_img">
+                <img src="assets/images/team/team3.png" alt="" class="img-fluid">
+              </div>
+              <div class="team_info pt-4 text-center">
+                <h5>Darry Millin</h5>
+                <p>Oral Surgeon</p>
+                <ul class="social_networks">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
+    <!-- Team section end -->
 
-    <!-- hero section -->
-
-    <main>
-      <!-- hero section -->
-      <section class="hero-section mb-5" id="home">
-        <div class="container">
-          <div
-            class="row align-items-md-center justify-content-md-between pt-5 pb-5"
-          >
-            <div class="col-xl-4 col-md-6">
-              <div class="hero_content">
-                <h6>Are you ready to Learn?</h6>
-                <h1>Learn With fun on <span>any schedule</span></h1>
-                <p class="mb-md-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Varius blandit facilisis quam netus.
-                </p>
-                <a href="#" class="btn_custom">Get Started</a>
-              </div>
-            </div>
-            <div class="col-xl-6 col-md-6">
-              <div class="hero_banner">
-                <img src="assets/images/hero.png" class="img-fluid" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- hero section -->
-
-      <!-- feature section -->
-      <section class="feature-section " id="feature">
-        <div class="container">
-          <!-- section title -->
-          <div class="row mb-4">
-            <h2 class="h_title text-center">Books</h2>
-          </div>
-          <div class="row justify-content-center mt-4 mb-4">
-            <div class="col-xl-3 col-md-6 mb-4 mt-4">
-              <div class="feature_content h-100">
-                <img
-                  src="assets/images/feature-1.svg"
-                  alt=""
-                  class="img-fluid"
-                  width="80px"
-                  height="80px"
-                />
-                <h5>1500+ Topic</h5>
-                <p>Learn Anythings</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4 mt-4">
-              <div class="feature_content h-100">
-                <img
-                  src="assets/images/feature-2.svg"
-                  alt=""
-                  class="img-fluid"
-                  width="80px"
-                  height="80px"
-                />
-                <h5>1800+ Students</h5>
-                <p>Learn Anythings</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4 mt-4">
-              <div class="feature_content h-100">
-                <img
-                  src="assets/images/feature-3.svg"
-                  alt=""
-                  class="img-fluid"
-                  width="80px"
-                  height="80px"
-                />
-                <h5>9K+ Test Token</h5>
-                <p>Learn Anythings</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4 mt-4">
-              <div class="feature_content h-100">
-                <img
-                  src="assets/images/feature-4.svg"
-                  alt=""
-                  class="img-fluid"
-                  width="80px"
-                  height="80px"
-                />
-                <h5>2000+ Student</h5>
-                <p>Learn Anythings</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- feature section -->
-
-      <!-- online course -->
-      <section class="online-coures mt-5 mb-5" id="course">
-        <div class="container">
-          <!-- section title -->
-          <div class="row mb-4">
-            <h2 class="h_title text-center">Online Courses</h2>
-          </div>
-          <!-- Container -->
-          <div class="row">
-            <!-- Column -->
-            <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-              <!--Card-->
-              <div class="cards d-flex h-100 flex-column">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="assets/images/online-course-1.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                </div>
-
-                <!--Card content-->
-                <div class="card-body h-100 mt-3 mb-3">
-                  <!--Title-->
-                  <h4 class="card-title">Modern Psychology</h4>
-                  <!--Text-->
-                  <p class="card-text">Designation</p>
-                  <a href="#" class="btn_custom border-0"> Buy Course</a>
-                </div>
-
-                <div class="row justify-content-between schedule">
-                  <div class="col d-flex">
-                    <img src="assets/images/calender.svg" alt="" />
-                    <p class="mb-0">Start 20 April, 2021</p>
-                  </div>
-                  <div class="col-auto d-flex">
-                    <img src="assets/images/people.svg" alt="" />
-                    <p class="mb-0">60 seats</p>
-                  </div>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-            <!-- Column -->
-
-            <!-- Column -->
-            <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-              <!--Card-->
-              <div class="cards d-flex h-100 flex-column">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="assets/images/online-course-2.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                </div>
-
-                <!--Card content-->
-                <div class="card-body h-100 mt-3 mb-3">
-                  <!--Title-->
-                  <h4 class="card-title">Modern Psychology</h4>
-                  <!--Text-->
-                  <p class="card-text">Designation</p>
-                  <a href="#" class="btn_custom border-0"> Buy Course</a>
-                </div>
-
-                <div class="row justify-content-between schedule">
-                  <div class="col d-flex">
-                    <img src="assets/images/calender.svg" alt="" />
-                    <p class="mb-0">Start 20 April, 2021</p>
-                  </div>
-                  <div class="col-auto d-flex">
-                    <img src="assets/images/people.svg" alt="" />
-                    <p class="mb-0">60 seats</p>
-                  </div>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-            <!-- Column -->
-
-            <!-- Column -->
-            <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
-              <!--Card-->
-              <div class="cards d-flex h-100 flex-column">
-                <!--Card image-->
-                <div class="view overlay">
-                  <img
-                    src="assets/images/online-course-3.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                </div>
-
-                <!--Card content-->
-                <div class="card-body h-100 mt-3 mb-3">
-                  <!--Title-->
-                  <h4 class="card-title">Modern Psychology</h4>
-                  <!--Text-->
-                  <p class="card-text">Designation</p>
-                  <a href="#" class="btn_custom border-0"> Buy Course</a>
-                </div>
-
-                <div class="row justify-content-between schedule">
-                  <div class="col d-flex">
-                    <img src="assets/images/calender.svg" alt="" />
-                    <p class="mb-0">Start 20 April, 2021</p>
-                  </div>
-                  <div class="col-auto d-flex">
-                    <img src="assets/images/people.svg" alt="" />
-                    <p class="mb-0">60 seats</p>
-                  </div>
-                </div>
-              </div>
-              <!--/.Card-->
-            </div>
-            <!-- Column -->
-          </div>
-          <!-- Container -->
-        </div>
-      </section>
-      <!-- online course -->
-
-      <!-- testimonials section -->
-      <section class="testimonials-section" id="testimonials">
-        <div class="container">
-          <div class="row">
-            <h2 class="h_title text-center mb-5">Testimonial</h2>
-          </div>
-
-          <div class="row mb-md-5">
-            <div class="swiper ph_slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="phBox">
-                    <img
-                      src="assets/images/testimonial-1.png"
-                      width="120px"
-                      height="120px"
-                      alt=""
-                    />
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="phBox">
-                    <img
-                      src="assets/images/testimonial-1.png"
-                      width="120px"
-                      height="120px"
-                      alt=""
-                    />
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="phBox">
-                    <img
-                      src="assets/images/testimonial-1.png"
-                      width="120px"
-                      height="120px"
-                      alt=""
-                    />
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="swiper-pagination"></div> -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- testimonials section -->
-    </main>
-
-    <!-- footer -->
-
-    <footer class="footer" id="footer">
+    <!-- Gallery section start -->
+    <section id="gallery" class="gallery_wrapper wrapper">
       <div class="container">
-        <div class="row pt-5 pb-5 justify-content-between">
-          <div class="col-lg-4 col-md-12 col-12 mb-md-4">
-            <p>
-              Millions of people of all ages and from around the world are
-              improving their lives with us
-            </p>
+        <div class="row">
+          <div class="col-sm-12 text-center mb-5">
+            <h3>Our Gallery</h3>
           </div>
-          <div class="col-lg-2 col-md-4 col-6 mb-md-4 ">
-            <h4>Course</h4>
-            <ul>
-              
-              <li>Graphic Design</li>
-              <li>Web Design</li>
-              <li>Business</li>
-              <li>Marketing</li>
-              <li>Engineering</li>
-            </ul>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="assets/images/gallery/1.jpg" alt="" class="w-100 h-100">
           </div>
-          <div class="col-lg-2 col-md-4 col-6 mb-md-4">
-            <h4>Terms</h4>
-            <ul>
-              
-              <li>Graphic Design</li>
-              <li>Web Design</li>
-              <li>Business</li>
-              <li>Marketing</li>
-              <li>Engineering</li>
-            </ul>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="assets/images/gallery/2.jpg" alt="" class="w-100 h-100">
           </div>
-          <div class="col-lg-2 col-md-4 col-6 mb-md-4">
-            <h4>Useful Links</h4>
-            <ul>
-              
-              <li>Graphic Design</li>
-              <li>Web Design</li>
-              <li>Business</li>
-              <li>Marketing</li>
-              <li>Engineering</li>
-            </ul>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="assets/images/gallery/3.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="assets/images/gallery/5.jpg" alt="" class="w-100 h-100">
+          </div>
+          <div class="col-md-8 col-sm-12 mb-4">
+            <img src="assets/images/gallery/4.jpg" alt="" class="w-100 h-100">
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+    <!-- Gallery section end -->
+
+
+    <!-- Testimonials section start  -->
+    <section id="testimonials" class="testimonial_wrapper wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-4">
+            <h3 class="text-dark">Testimonials</h3>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-xl-3 col-md-4 col-sm-6">
+            <div class="card text-center">
+              <img src="assets/images/testimonial/client1.png" alt="" class="client_img">
+              <h4 class="pt-4 mb-0">Aliceano Colby</h4>
+              <p>CEO of Prime IT</p>
+            </div>
+          </div>
+          <div class="col-xl-9 col-md-8 col-sm-6 ps-md-4 pt-sm-0 pt-4">
+              <h4>Awesome Work</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque eos dolor officia pariatur illo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials section end  -->
+
+
+    <!-- Appointment section start -->
+    <section class="appointment_wrapper wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-8 col-6">
+            <h3>Request your appointment and start your smile makeover!</h3>
+              <a href="#" class="mt-5 main_btn fill_btn">Request Appointment</a>
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment section end -->
+
+    <!-- Blog section start -->
+    <section id="blog" class="blog_wrapper wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-5">
+            <h3 class="text-dark">Latest Blog</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 mb-4">
+            <div class="card p-0 border-0 rounded-3">
+              <img src="assets/images/blog/1.jpg" alt="" class="img-fluid">
+              <div class="blog_content">
+                <div>
+                  <h5 class="text-white mb-4">Dental Insuance</h5>
+                  <h6 class="text-white">By Admin - Feb, 18 2023</h6>
+                  <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                  <a href="#" class="main_btn mt-2">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 mb-4">
+            <div class="card p-0 border-0 rounded-3">
+              <img src="assets/images/blog/2.jpg" alt="" class="img-fluid">
+              <div class="blog_content">
+                <div>
+                  <h5 class="text-white mb-4">Dental Insuance</h5>
+                  <h6 class="text-white">By Admin - Feb, 18 2023</h6>
+                  <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. text is overlapping need to be fixed</p>
+                </div>
+                <div>
+                  <a href="#" class="main_btn mt-2">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 mb-4">
+            <div class="card p-0 border-0 rounded-3">
+              <img src="assets/images/blog/3.jpg" alt="" class="img-fluid">
+              <div class="blog_content">
+                <div>
+                  <h5 class="text-white mb-4">Dental Insuance</h5>
+                  <h6 class="text-white">By Admin - Feb, 18 2023</h6>
+                  <p class="mt-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                  <a href="#" class="main_btn mt-2">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog section end -->
+
+
+    <!-- Footer section start -->
+    <section id="contact" class="footer_wrapper wrapper">
+      <div class="container pb-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-6  mb-4">
+            <h5>Clinic Loaction</h5>
+            <p class="ps-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore.</p>
+            <div class="contact_info">
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fa fa-home me-3"></i>No. 96, South Mumbai, India</a></li>
+                <li><a href="#"><i class="fa fa-phone me-3"></i>+91 0 0000000</a></li>
+                <li><a href="#"><i class="fa fa-envelope me-3"></i>info@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6 mb-4">
+            <h5>More Links</h5>
+            <ul class="link_widget p-0">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6 mb-4">
+            <h5>More Links</h5>
+            <ul class="link_widget p-0">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6  mb-4">
+            <h5>Newsletter</h5>
+            <div class="form-group mb-4">
+              <input type="email" class="form-control bg-transparent" placeholder="Email">
+              <button type="submit" class="main_btn rounded-2 mt-3 border-white text-white">
+                Subscribe
+              </button>
+            </div>
+              <h5>Stay Connect</h5>
+              <ul class="social_networks d-flex align-items-center p-0">
+                <li><a href="#"><i class="fa fa-flag"></i></a></li>
+                <li><a href="#"><i class="fa fa-flag"></i></a></li>
+                <li><a href="#"><i class="fa fa-flag"></i></a></li>
+                <li><a href="#"><i class="fa fa-flag"></i></a></li>
+                
+              </ul>
+            </div>
+
+        </div>
+        
+       
+      </div>
+      <div class="container-fluid copyright_section">
+        <p class="p-0">Copyright <a href="#">Clinic</a> All Right Reserved 2023</p>
+      </div>
+
+      </div>
+      </div>
+    </section>
+
+    <!-- Footer section end -->
+
+
+
 
     <!-- All Js files-->
 
@@ -432,6 +632,10 @@
 
     <!-- Swiper JS-->
     <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- main js -->
+
+    <script src="assets/js/main.js"></script>
 
     <script type="text/javascript">
       //swiper
